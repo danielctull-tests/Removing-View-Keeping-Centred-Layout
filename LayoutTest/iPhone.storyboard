@@ -49,7 +49,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="7bI-IO-UBa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fng-9b-BYJ" secondAttribute="top" id="3Uu-QW-syW"/>
+                                    <constraint firstItem="7bI-IO-UBa" firstAttribute="top" secondItem="fng-9b-BYJ" secondAttribute="top" priority="999" id="3Uu-QW-syW"/>
                                     <constraint firstItem="93c-rw-hQn" firstAttribute="leading" secondItem="fng-9b-BYJ" secondAttribute="leading" id="NbH-IA-Yqj"/>
                                     <constraint firstItem="7bI-IO-UBa" firstAttribute="leading" secondItem="fng-9b-BYJ" secondAttribute="leading" id="R9M-Yf-WAE"/>
                                     <constraint firstItem="93c-rw-hQn" firstAttribute="top" secondItem="fng-9b-BYJ" secondAttribute="top" id="Wfh-jr-s6K"/>
@@ -70,7 +70,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="topView" destination="93c-rw-hQn" id="kB1-ui-AOP"/>
+                        <outlet property="centeredView" destination="fng-9b-BYJ" id="4UV-3j-ezH"/>
+                        <outlet property="constraint" destination="xHp-SL-iou" id="ZZb-Gt-Sdf"/>
+                        <outlet property="topView" destination="93c-rw-hQn" id="u9P-zY-lcq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kcz-Id-M7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
