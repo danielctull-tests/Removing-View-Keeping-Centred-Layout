@@ -16,6 +16,9 @@
 
 - (IBAction)removeView:(id)sender {
 	[self.topView removeFromSuperview];
+	[UIView animateWithDuration:3.0f animations:^{
+		[self.view layoutIfNeeded];
+	}];
 }
 
 @end
