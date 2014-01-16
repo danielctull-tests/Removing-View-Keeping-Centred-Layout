@@ -19,6 +19,8 @@
 		24880D12188812DE00D04015 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24880CFA188812DE00D04015 /* UIKit.framework */; };
 		24880D1A188812DE00D04015 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24880D18188812DE00D04015 /* InfoPlist.strings */; };
 		24880D1C188812DE00D04015 /* LayoutTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D1B188812DE00D04015 /* LayoutTestTests.m */; };
+		24880D26188812EE00D04015 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24880D25188812EE00D04015 /* iPhone.storyboard */; };
+		24880D291888130900D04015 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24880D281888130900D04015 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		24880D17188812DE00D04015 /* LayoutTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LayoutTestTests-Info.plist"; sourceTree = "<group>"; };
 		24880D19188812DE00D04015 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24880D1B188812DE00D04015 /* LayoutTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutTestTests.m; sourceTree = "<group>"; };
+		24880D25188812EE00D04015 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		24880D271888130900D04015 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24880D281888130900D04015 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				24880D06188812DE00D04015 /* AppDelegate.m */,
 				24880D08188812DE00D04015 /* Images.xcassets */,
 				24880CFD188812DE00D04015 /* Supporting Files */,
+				24880D25188812EE00D04015 /* iPhone.storyboard */,
+				24880D271888130900D04015 /* ViewController.h */,
+				24880D281888130900D04015 /* ViewController.m */,
 			);
 			path = LayoutTest;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24880D01188812DE00D04015 /* InfoPlist.strings in Resources */,
+				24880D26188812EE00D04015 /* iPhone.storyboard in Resources */,
 				24880D09188812DE00D04015 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24880D291888130900D04015 /* ViewController.m in Sources */,
 				24880D07188812DE00D04015 /* AppDelegate.m in Sources */,
 				24880D03188812DE00D04015 /* main.m in Sources */,
 			);

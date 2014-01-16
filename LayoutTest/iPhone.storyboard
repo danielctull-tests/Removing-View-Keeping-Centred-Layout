@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ema-Kc-Jup">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="g3y-po-lsV">
+            <objects>
+                <viewController id="ema-Kc-Jup" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e5K-O5-v2b"/>
+                        <viewControllerLayoutGuide type="bottom" id="xHq-6k-uHA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t0v-ju-fXp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDA-PX-vSJ">
+                                <rect key="frame" x="132" y="518" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Remove">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeView:" destination="ema-Kc-Jup" eventType="touchUpInside" id="jAN-Xc-kAB"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fng-9b-BYJ">
+                                <rect key="frame" x="0.0" y="159" width="320" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93c-rw-hQn">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Udp-gb-XXp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bI-IO-UBa">
+                                        <rect key="frame" x="0.0" y="150" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="w25-CS-jzz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7bI-IO-UBa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fng-9b-BYJ" secondAttribute="top" id="3Uu-QW-syW"/>
+                                    <constraint firstItem="93c-rw-hQn" firstAttribute="leading" secondItem="fng-9b-BYJ" secondAttribute="leading" id="NbH-IA-Yqj"/>
+                                    <constraint firstItem="7bI-IO-UBa" firstAttribute="leading" secondItem="fng-9b-BYJ" secondAttribute="leading" id="R9M-Yf-WAE"/>
+                                    <constraint firstItem="93c-rw-hQn" firstAttribute="top" secondItem="fng-9b-BYJ" secondAttribute="top" id="Wfh-jr-s6K"/>
+                                    <constraint firstAttribute="trailing" secondItem="93c-rw-hQn" secondAttribute="trailing" id="f5k-fL-HSh"/>
+                                    <constraint firstAttribute="bottom" secondItem="7bI-IO-UBa" secondAttribute="bottom" id="tpU-Ci-PY9"/>
+                                    <constraint firstItem="7bI-IO-UBa" firstAttribute="top" secondItem="93c-rw-hQn" secondAttribute="bottom" constant="50" id="xHp-SL-iou"/>
+                                    <constraint firstAttribute="trailing" secondItem="7bI-IO-UBa" secondAttribute="trailing" id="xfj-fx-B9Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fng-9b-BYJ" secondAttribute="trailing" id="AY4-cU-rg6"/>
+                            <constraint firstAttribute="centerX" secondItem="NDA-PX-vSJ" secondAttribute="centerX" id="HIR-sw-Q9c"/>
+                            <constraint firstItem="fng-9b-BYJ" firstAttribute="leading" secondItem="t0v-ju-fXp" secondAttribute="leading" id="Qj7-CJ-mag"/>
+                            <constraint firstAttribute="centerY" secondItem="fng-9b-BYJ" secondAttribute="centerY" id="Xk9-YD-E1T"/>
+                            <constraint firstItem="xHq-6k-uHA" firstAttribute="top" secondItem="NDA-PX-vSJ" secondAttribute="bottom" constant="20" id="qJv-kF-LwQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="topView" destination="93c-rw-hQn" id="kB1-ui-AOP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kcz-Id-M7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="195"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
